@@ -1,7 +1,7 @@
 # ySelect 使用方法
 [查看样式范例](https://ycxyi.github.io/ySelect/)
 ### 引入常用引用
-``` 引用
+``` html
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/ySelect.css" rel="stylesheet" type="text/css">
 ```
@@ -19,9 +19,11 @@
 
 ### javascript代码
 ###### 你可以直接用默认模板来生成下拉
-`$('.demo').ySelect();`
-###### 你也可以自定义参数
+``` javascript
+$('.demo').ySelect();
 ```
+###### 你也可以自定义参数
+``` javascript
 $('.demo1').ySelect(
     {
         placeholder: '请先选择一些项目',
