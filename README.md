@@ -5,7 +5,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/ySelect.css" rel="stylesheet" type="text/css">
 ```
->其中font-awesome是非必须的
+>其中font-awesome是~~非必须的~~(全选图标)
 ---
 
 ### html代码
