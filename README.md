@@ -14,7 +14,7 @@
     <option value="1">文本</option>
 </select>
 ```
->注意 在select中加入 multiple="multiple" ,其中<optgroup label="组"></optgroup>是被支持的.
+>注意 在select中加入 multiple="multiple" ,其中`<optgroup label="组"></optgroup>`是被支持的.
 ---
 
 ### javascript代码
@@ -38,12 +38,8 @@ $('.demo1').ySelect(
 
 ### 参数说明
 
-*placeholder:选择框占位符
-
-*searchText:下拉搜索占位符
-
-*showSearch:显示搜索 (true/false)
-
-*numDisplayed:超出数量整合
-
-*overflowText:超出数量整合文本提示,{n}为数量
++ placeholder:选择框占位符
++ searchText:下拉搜索占位符
++ showSearch:显示搜索 (true/false)
++ numDisplayed:超出数量整合
++ overflowText:超出数量整合文本提示,{n}为数量
