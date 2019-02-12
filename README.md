@@ -37,9 +37,10 @@ $('.demo1').ySelect(
 ---
 
 ### 参数说明
-
-+ placeholder:选择框占位符
-+ searchText:下拉搜索占位符
-+ showSearch:显示搜索 (true/false)
-+ numDisplayed:超出数量整合
-+ overflowText:超出数量整合文本提示,{n}为数量
+**参数名称** |**说明**
+-|-
+**placeholder** |选择框占位符
+**searchText** |下拉搜索占位符
+**showSearch** |显示搜索 (true/false)
+**numDisplayed** |超出数量整合
+**overflowText** |超出数量整合文本提示,{n}为数量
