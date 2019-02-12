@@ -1,7 +1,7 @@
 # ySelect 使用方法
 [查看样式范例](https://ycxyi.github.io/ySelect/)
 ### 引入常用引用
-``` 
+``` 可以注释 
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/ySelect.css" rel="stylesheet" type="text/css">
 ```
