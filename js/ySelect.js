@@ -1,5 +1,4 @@
 (function($) {
-
     $.fn.ySelect = function(options) {
       var defaultOptions={
           placeholder: '请选择',
@@ -9,11 +8,11 @@
           showSearch: true
       }
         if (typeof options == 'string' ) {
-            var settings = options;
+          var  settings = options;
         }
         else {
 
-            var settings = $.extend(true,{},defaultOptions, options);
+          var  settings = $.extend(true,{},defaultOptions, options);
         }
 
 
@@ -100,7 +99,11 @@
                 this.$wrap.find('.fs-label').html(labelText);
                 this.$select.change();
             },
-
+            setwrap: function() {
+              // if(settings.isCheck==false)
+              //   this.$wrap.find('.fs-dropdown').addClass('hidden');
+              return "123";
+            },
         }
 
 
@@ -188,6 +191,7 @@
 
         $wrap.find('select').val(selected);
         $wrap.find('select').ySelect('reloadDropdownLabel');
+        $wrap.find('select').ySelect('setwrap');
     });
     $(document).on('keyup', '.fs-search input', function(e) {
         if (40 == e.which) {
@@ -286,24 +290,24 @@
         }
     });
 
-})(jQuery);
+    //update by ycx,for this plugin to get selected values
+    $.fn.ySelectedValues=function (splitString)
+      {
+        var result="";
+        var $selects=this.find("option:selected");
+        for (var i = 0; i < $selects.length; i++) {
+          result+=$selects[i].value+((i==$selects.length-1)?"":splitString);
+        }
+        return result;
+      }
+    $.fn.ySelectedTexts=function (splitString)
+      {
+        var result="";
+        var $selects=this.find("option:selected");
+        for (var i = 0; i < $selects.length; i++) {
+          result+=$selects[i].text+((i==$selects.length-1)?"":splitString);
+        }
+        return result;
+      }
 
-//update by ycx,for this plugin to get selected values
-$.fn.ySelectedValues=function (splitString)
-  {
-    var result="";
-    var $selects=this.find("option:selected");
-    for (var i = 0; i < $selects.length; i++) {
-      result+=$selects[i].value+((i==$selects.length-1)?"":splitString);
-    }
-    return result;
-  }
-$.fn.ySelectedTexts=function (splitString)
-  {
-    var result="";
-    var $selects=this.find("option:selected");
-    for (var i = 0; i < $selects.length; i++) {
-      result+=$selects[i].text+((i==$selects.length-1)?"":splitString);
-    }
-    return result;
-  }
+})(jQuery);
