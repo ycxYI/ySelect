@@ -186,7 +186,7 @@
             var selected = $(this).attr('data-value');
             $wrap.find('.fs-option').removeClass('selected');
             $(this).addClass('selected');
-            $wrap.find('.fs-dropdown').hide();
+            $wrap.find('.fs-dropdown').addClass('hidden');
         }
 
         $wrap.find('select').val(selected);
